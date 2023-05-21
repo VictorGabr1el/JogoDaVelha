@@ -1,6 +1,8 @@
 import { FC, useEffect, useState } from "react";
 import style from "./styles/App.module.css";
 
+import back from "./assets/back.png";
+
 interface SpanProps {
   index: number;
   value: number;
@@ -181,6 +183,12 @@ function App() {
       )}
       {!player && !showGameMode && (
         <div className={style.modal}>
+          <button
+            onClick={() => setShowGmeMode(true)}
+            className={style.button_back}
+          >
+            <img src={back} alt="back icon" />
+          </button>
           <div className={style.div_modal}>
             <h2>Escolha</h2>
             <div className={style.choose}>

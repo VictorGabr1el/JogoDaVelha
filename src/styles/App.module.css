@@ -65,6 +65,27 @@
   cursor: pointer;
 }
 
+.button_back {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  position: absolute;
+  transform: translate(-160px, 0px);
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button_back:hover {
+  background: #6c6c6c;
+}
+.button_back img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
 .choose {
   display: flex;
   width: 100%;
@@ -90,6 +111,11 @@
   font-weight: 500;
   cursor: pointer;
   transition: 0.2s;
+}
+
+.choose button:hover {
+  background-color: #6c6c6c;
+  border-radius: 12px;
 }
 
 .render_horizontal {
