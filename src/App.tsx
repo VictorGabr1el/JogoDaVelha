@@ -177,7 +177,7 @@ function App() {
             {(IA && winner === 2 && toStyle)&& (
               <h3 className={style.h3}>O vencedor é o jogador {winner}</h3>
             )}
-            {winner && toStyle && (
+            {(!IA && winner && toStyle) && (
               <h3 className={style.h3}>O vencedor é o jogador {winner}</h3>
             )}
             {draw && <h3 className={style.h3}>Deu Velha!</h3>}
