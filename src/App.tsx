@@ -171,6 +171,12 @@ function App() {
       {(winner || draw) && (
         <div className={style.modal}>
           <div className={style.div_modal}>
+            {(IA && winner === 1 && toStyle) && (
+              <h3 className={style.h3}>Você venceu</h3>
+            )}
+            {(IA && winner === 2 && toStyle)&& (
+              <h3 className={style.h3}>O vencedor é o jogador {winner}</h3>
+            )}
             {winner && toStyle && (
               <h3 className={style.h3}>O vencedor é o jogador {winner}</h3>
             )}
