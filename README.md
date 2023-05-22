@@ -1,5 +1,6 @@
 # JogoDaVelha
 
+Neste jogo, você encontrará dois modos: um para jogar sozinho livremente e outro para jogar com uma máquina no modo de IA, implementado com um sistema simples para realizar jogadas aleatórias. Aproveite!
 
 tecnologias: React, typescript
 
